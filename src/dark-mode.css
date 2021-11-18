@@ -1,0 +1,59 @@
+.dark-mode * {
+  color: var(--white);
+  background: var(--dark);
+}
+.dark-mode *:focus {
+  outline: 3px dashed var(--warning);
+}
+body.dark-mode {
+  background-color: var(--dark);
+  color: var(--dark);
+}
+.dark-mode .btn {
+  border: 0.2rem solid var(--light-highlight);
+}
+.dark-mode .btn.toggle-btn {
+  border-color: var(--dark-highlight)
+}
+.dark-mode .btn.toggle-btn[aria-pressed="true"] {
+  border-color: var(--light-highlight)
+}
+.dark-mode .btn__danger {
+  color: var(--black);
+  background-color: var(--warning);
+  border-color: var(--warning);
+}
+.dark-mode .btn__filter {
+  border-color: var(--dark-highlight);
+}
+.dark-mode .btn__primary {
+  color: var(--dark);
+  background-color: var(--white);
+}
+.dark-mode .todoapp {
+  background: var(--dark);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 2.5rem 5rem 0 rgba(255, 255, 255, 0.1);
+}
+.dark-mode .input__lg {
+  border: 2px solid #000;
+}
+.dark-mode .input__lg:focus {
+  border-color: var(--light-highlight);
+}
+.dark-mode .todo-text {
+  border: 2px solid var(--light-highlight);
+}
+.dark-mode .c-cb > input[type="checkbox"]:focus + label::before {
+  outline: 3px dashed var(--warning);
+}
+.dark-mode button.themeSwitch {
+  background: var(--darkgray);
+  box-shadow:1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.dark-mode .dark-mode button.themeSwitch {
+  background:var(--lightgray);
+}
+.dark-mode #themeSwitchButton {
+    box-shadow: 0.1px 0.1px 3px rgb(255 255 255 / 70%);
+}
